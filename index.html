@@ -3,48 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>T-shirt</title>
+  <title>T-shirts - ElOria</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
     <header>
-      <div class="header-title">T-shirt</div>
-      <div class="heart">♡</div>
+      <div class="header-left">
+        <div class="header-title">T-shirt Collection</div>
+        <nav style="margin-top: 5px; display: flex; gap: 15px;">
+          <a href="https://dubnooo.github.io/Jeans-Collection/" style="text-decoration: none; color: #666; font-size: 13px;">Джинси</a>
+          <a href="https://dubnooo.github.io/hoodie/" style="text-decoration: none; color: #666; font-size: 13px;">Худі</a>
+          <a href="https://dubnooo.github.io/Jackets/" style="text-decoration: none; color: #666; font-size: 13px;">Куртки</a>
+        </nav>
+      </div>
+
+      <div class="header-right">
+        <div class="heart">♡</div>
+        <a href="https://dubnooo.github.io/pay/pay.html" class="cart-link">
+          🛒 <span id="cart-count">0</span>
+        </a>
+      </div>
     </header>
+
     <div class="products-grid">
         <div class="product">
-            <img src="https://images.prom.ua/5862739885_w640_h2048_photo_2024_05_06_08_23_49.jpg?fresh=1&PIMAGE_ID=5862739885" alt="Чорний худі з серцебиттям">
+            <div class="img-wrapper">
+                <img src="https://images.prom.ua/5862739885_w640_h2048_photo_2024_05_06_08_23_49.jpg?fresh=1&PIMAGE_ID=5862739885" alt="T-shirt 1">
+                <div class="product-heart">♡</div>
+            </div>
             <div class="price">400.99 ₴</div>
-            <div class="product-heart">♡</div>
+            <button class="buy-btn" onclick="addToCart('Black Heart T-shirt', 400.99, 'https://images.prom.ua/5862739885_w640_h2048_photo_2024_05_06_08_23_49.jpg?fresh=1&PIMAGE_ID=5862739885')">Купити</button>
         </div>
 
         <div class="product">
-            <img src="https://images.prom.ua/5862742777_w640_h640_5862742777.jpg">
+            <div class="img-wrapper">
+                <img src="https://images.prom.ua/5862742777_w640_h640_5862742777.jpg" alt="T-shirt 2">
+                <div class="product-heart">♡</div>
+            </div>
             <div class="price">370.99 ₴</div>
-            <div class="product-heart">♡</div>
+            <button class="buy-btn" onclick="addToCart('White Print T-shirt', 370.99, 'https://images.prom.ua/5862742777_w640_h640_5862742777.jpg')">Купити</button>
         </div>
 
         <div class="product">
-            <img src="https://images.prom.ua/5694492558_w640_h2048_4.jpg?fresh=1&PIMAGE_ID=5694492558" alt="Чорний худі Los Angeles">
+            <div class="img-wrapper">
+                <img src="https://images.prom.ua/5694492558_w640_h2048_4.jpg?fresh=1&PIMAGE_ID=5694492558" alt="T-shirt 3">
+                <div class="product-heart">♡</div>
+            </div>
             <div class="price">450.99 ₴</div>
-            <div class="product-heart">♡</div>
+            <button class="buy-btn" onclick="addToCart('LA Style T-shirt', 450.99, 'https://images.prom.ua/5694492558_w640_h2048_4.jpg?fresh=1&PIMAGE_ID=5694492558')">Купити</button>
         </div>
 
         <div class="product">
-            <img src="https://basket-12.wbbasket.ru/vol1839/part183929/183929339/images/c516x688/1.webp" alt="Білий худі з метеликом">
+            <div class="img-wrapper">
+                <img src="https://basket-12.wbbasket.ru/vol1839/part183929/183929339/images/c516x688/1.webp" alt="T-shirt 4">
+                <div class="product-heart">♡</div>
+            </div>
             <div class="price">299.99 ₴</div>
-            <div class="product-heart">♡</div>
+            <button class="buy-btn" onclick="addToCart('Butterfly T-shirt', 299.99, 'https://basket-12.wbbasket.ru/vol1839/part183929/183929339/images/c516x688/1.webp')">Купити</button>
         </div>
 
         <div class="product">
-            <img src="https://basket-15.wbbasket.ru/vol2267/part226775/226775699/images/big/1.webp" alt="Чорний худі C'est la vie Paris">
+            <div class="img-wrapper">
+                <img src="https://basket-15.wbbasket.ru/vol2267/part226775/226775699/images/big/1.webp" alt="T-shirt 5">
+                <div class="product-heart">♡</div>
+            </div>
             <div class="price">300.99 ₴</div>
-            <div class="product-heart">♡</div>
+            <button class="buy-btn" onclick="addToCart('Paris Classic T-shirt', 300.99, 'https://basket-15.wbbasket.ru/vol2267/part226775/226775699/images/big/1.webp')">Купити</button>
         </div>
 
         <div class="product">
-            <img src="https://lurex.in.ua/uploads/products/middle/1490/1535-2-9_3.jpg?v=1619510079" alt="Білий худі з серцем">
+            <div class="img-wrapper">
+                <img src="https://lurex.in.ua/uploads/products/middle/1490/1535-2-9_3.jpg?v=1619510079" alt="T-shirt 6">
+                <div class="product-heart">♡</div>
+            </div>
             <div class="price">499.99 ₴</div>
-            <div class="product-heart">♡</div>
+            <button class="buy-btn" onclick="addToCart('Minimalist Heart T-shirt', 499.99, 'https://lurex.in.ua/uploads/products/middle/1490/1535-2-9_3.jpg?v=1619510079')">Купити</button>
+        </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
